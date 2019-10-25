@@ -9,6 +9,6 @@ Import database script surrender.gg.sql to created database;
 
 Optionally you can just review the console running log screenshot of this project.
 
-{\\__/}<br />
+ {\\__/}<br />
 (●_●)<br />
 ( >🌮 Want a taco?<br />
