@@ -55,7 +55,7 @@ public class HttpClient {
 
         HttpsURLConnection httpClient = (HttpsURLConnection) new URL(url).openConnection();
 
-        //add reuqest header
+        //add request header
         httpClient.setRequestMethod("POST");
         httpClient.setRequestProperty("User-Agent", "Mozilla/5.0");
         httpClient.setRequestProperty("Accept-Language", "en-US,en;q=0.5");

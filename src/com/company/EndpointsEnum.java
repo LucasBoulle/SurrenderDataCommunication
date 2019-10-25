@@ -3,8 +3,30 @@ package com.company;
 import java.lang.reflect.Array;
 
 public enum EndpointsEnum {
-    SummonerByName("/lol/summoner/v4/summoners/by-name/", new String[] {} , new String[] {"summonerName"}),
-    FreeChampionRotation("lol/platform/v3/champion-rotations", new String[] {}, new String[] {});
+    SummonerByName(
+            "/lol/summoner/v4/summoners/by-name/{summonerName}",
+            new String[] {} ,
+            new String[] {"summonerName"}
+            ),
+    SummonerById(
+            "/lol/summoner/v4/summoners/by-account/{encryptedAccountId}",
+            new String[] {} ,
+            new String[] {"encryptedAccountId"}
+    ),
+    ChampionMasteries(
+            "/lol/champion-mastery/v4/champion-masteries/by-summoner/{encryptedSummonerId}",
+            new String[] {} ,
+            new String[] {"encryptedSummonerId"}
+            ),
+    ChampionMasteryByChampion(
+            "/lol/champion-mastery/v4/champion-masteries/by-summoner/{encryptedSummonerId}/by-champion/{championId}",
+            new String[] {} ,
+            new String[] {"encryptedSummonerId", "championId"}
+    ),
+    FreeChampionRotation("lol/platform/v3/champion-rotations",
+            new String[] {},
+            new String[] {}
+            );
 
     private final String path;
     private final String[] parameters;
