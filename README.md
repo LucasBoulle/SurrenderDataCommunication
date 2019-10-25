@@ -1,7 +1,8 @@
 # SurrenderDataCommunication
+An example project for surrender.gg connections demonstration.
 
 ## Connection features
-- Database coonnection
+- Database connection
 - Riot games api
 ## Running the example connection project 
 At first, add ```surrender-db``` to phpMyAdmin of apache database feature at port 8080;
