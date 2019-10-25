@@ -13,7 +13,8 @@ public class Main {
         String endpoint = EndpointsEnum.FreeChampionRotation.getPath();
         obj.sendGet(endpoint, parameters, parameters);
 
-        System.out.println("Testing 2 - Send Http POST request");
+        System.out.println("Send Http POST request");
+        System.out.println("OBS: riot api does not have useful post requests, this request is only for example");
         obj.sendPost();
     }
 }
