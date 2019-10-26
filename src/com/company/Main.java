@@ -9,14 +9,14 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         //Connecting to database
-        String dbURL = "jdbc:derby://localhost:8080/surrender-db;create=true";
-        String user = "admin";
-        String password = "admin";
-        Connection con = DriverManager.getConnection(dbURL, user, password);
-        if (con != null) {
-            System.out.println("Connected to database!!!");
-        }
-
+        //String dbURL = "jdbc:derby://localhost:8080/surrender-db;create=true";
+        //String user = "admin";
+        //String password = "admin";
+        //Connection con = DriverManager.getConnection(dbURL, user, password);
+        //if (con != null) {
+        //    System.out.println("Connected to database!!!");
+        //}
+        // Uncomment this to connect to database
 
         // Request api data via REST
         HttpClient obj = new HttpClient();
